@@ -10,7 +10,7 @@ function Login(){
     return(
         <div>
             <LoginForm/>
-            {/* <button onClick={() => {navigate("/home")}}>LOGIN</button> */}
+            <button onClick={() => {navigate("/registration")}}>sign-up</button>
         </div>
     )
 }

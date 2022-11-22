@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+.login{
+    background-image: url("./background.png");
+    height:100vh;
+}
+
+.input-boxes{
+    position: relative;
+    top: 25vh;
+    width: 20vh;
+    margin: auto;
+}
+
+.error{
+    margin: 0;
+    color:red;
+    font-family: 'Nunito';
+    text-align: left;
+    border-radius: 25px;
+    padding-left: 50px;
+    width: 600px;
+    font-size: 20px;
+    height: 10px;
+}
+
+.input-boxes{
+    margin:auto;
+    width: 50vh;
+    top: 28.5vh;
+}
+
+.input-boxes #username, #password{
+    background-color: #61beb982;
+    font-family:'Nunito';
+    margin-top: 15px;
+    font-size: 35px;
+    border-radius: 50px;
+    padding-left: 20px;
+    width: 40vh;
+    height: 70px;
+}
+.login-button{
+    background-color: #17252A;
+    font-family:'Nunito';
+    font-size: 30px;
+    color: #CEF4F2;
+    position: relative;
+    top: 30vh;
+    border-radius: 35px;
+    width: 20vh;
+    height: 55px;
+}
+
+.sign{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 7px;
+    position: relative;
+    top: 30.7vh;
+}
+
+#signup-button{
+    height: 55px;
+    width: 20vh;
+    background-color: #17252A;
+    font-family:'Nunito';
+    font-size: 30px;
+    color: #CEF4F2;
+    border-radius: 35px;
+}
+
+#google-login{
+    height: 55px;
+    width: 35vh;
+    background-color: #17252A;
+    font-family:'Nunito';
+    font-size: 30px;
+    color: #CEF4F2;
+    border-radius: 35px;
+}
+
+/* #signup-button{
+    margin-top: 5px;
+    background-color: #17252A;
+    font-family:'Nunito';
+    font-size: 30px;
+    color: #CEF4F2;
+    position: relative;
+    top: 30vh;
+    border-radius: 35px;
+    width: 20vh;
+    height: 55px;
+}
+.google-login{
+    margin-top: 5px;
+    background-color: #17252A;
+    font-family:'Nunito';
+    font-size: 30px;
+    color: #CEF4F2;
+    position: relative;
+    top: 40vh;
+    border-radius: 35px;
+    width: 35vh;
+    height: 55px;
+} */
+.sign #google-login:hover{
+    background-color: #17252ac3;
+    cursor: pointer;
+}
+.sign #signup-button:hover{
+    background-color: #17252ac3;
+    cursor: pointer;
+}
+
+
+.login-button:hover{
+    background-color: #17252ac3;
+    cursor: pointer;
+}

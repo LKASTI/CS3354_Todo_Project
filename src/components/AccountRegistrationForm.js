@@ -1,9 +1,11 @@
-import react, { useContext } from 'react'
+import { useContext } from 'react'
 import { AppContext } from '../App'
 import {useForm} from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
 import * as yup from 'yup'
 import {yupResolver} from '@hookform/resolvers/yup'
+import {addDoc, getDocs, collection} from 'firebase/firestore'
+import {db} from '../config/firebase'
 
 function AccountRegistrationForm(){
     const {setUsername} = useContext(AppContext)
@@ -26,18 +28,35 @@ function AccountRegistrationForm(){
         resolver: yupResolver(schema) 
     })
 
-    const onSubmit = (data) =>{
-        setUsername(data.username)
-        //check if username or email already exists
-        return data? navigate("/confirmation") : console.log(data)
-        //need to send data to back end
+    const usersRef = collection(db, "accounts")
 
+    let nameExists = false
+    const onSubmit = async (data) =>{
+        let count = 0
+        setUsername(data.username)
+        //check if username already exists
+            //get all documents in 'users' and check if any of their usernames are equal to this username entered
+        const allDocs = await getDocs(usersRef)
+        allDocs.forEach((doc) => {
+            count = count +1
+            if((doc.data().username) === data.username)
+                nameExists = true
+        })
+        if(nameExists)
+            return alert("This username is already taken")
+        await addDoc(usersRef, {
+            email: data.email,
+            id: (count),
+            password: data.password,
+            username: data.username, 
+        })
+        return navigate("/confirmation")
     }
 
     return(
         <form onSubmit={handleSubmit(onSubmit)}>
             <input type="text" placeholder='enter a username...' {...register("username")}/> 
-            <p>{errors.username?.message}</p>
+            <p>{errors.username?.message}</p> 
             <input type="text" placeholder='enter an email...' {...register("email")}/> 
             <p>{errors.email?.message}</p>
             <input type="password" placeholder='enter a password...' {...register("password")}/> 

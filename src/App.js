@@ -5,16 +5,19 @@ import AccountRegistration from './pages/AccountRegistration';
 import AccountConfirmation from './pages/AccountConfirmation'; 
 import {useState, useContext, createContext} from 'react'
 import Home from './pages/Home';
+import TodoList from './pages/TodoList';
+import CreateTask from './pages/CreateTask'
 
 export const AppContext = createContext()
 
 function App() {
-  const [username, setUsername] = useState()
+  const [username, setUsername] = useState("")
+  const [taskList, setTaskList] = useState([])
   return (
     
     
     <div className="App">
-      <AppContext.Provider value={{username, setUsername}}>
+      <AppContext.Provider value={{username, setUsername, taskList, setTaskList}}>
         <Router>
           <Routes>
             <Route path="/" element={<Login/>}/>
@@ -22,6 +25,8 @@ function App() {
             <Route path="/registration" element={<AccountRegistration/>}/>
             <Route path="/confirmation" element={<AccountConfirmation/>}/>
             <Route path="/home" element={<Home/>}/>
+            <Route path="/todolist" element={<TodoList/>}/>
+            <Route path="/task-creation" element={<CreateTask/>}/>
             <Route path="*" element={<h1>ERROR 404 PAGE NOT FOUND</h1>}/>
           </Routes>
         </Router>

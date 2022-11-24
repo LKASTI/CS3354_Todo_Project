@@ -44,7 +44,7 @@ function LoginForm(){
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="input-boxes"> 
                 <p className='error'>{errors.username?.message}</p> 
-                <input id='username' type="text" placeholder='username...' {...register("username")}/> 
+                <input id='username' type="text" placeholder='username...' autoComplete='off' {...register("username")}/> 
                 <p className='error'>{errors.password?.message}</p>
                 <input id='password' type="password" placeholder='password...' {...register("password")}/> 
             </div>

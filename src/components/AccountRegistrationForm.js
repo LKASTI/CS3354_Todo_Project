@@ -55,13 +55,13 @@ function AccountRegistrationForm(){
 
     return(
         <form onSubmit={handleSubmit(onSubmit)}>
-            <input type="text" placeholder='enter a username...' {...register("username")}/> 
+            <input type="text" placeholder='enter a username...' autoComplete='off' {...register("username")}/> 
             <p>{errors.username?.message}</p> 
-            <input type="text" placeholder='enter an email...' {...register("email")}/> 
+            <input type="text" placeholder='enter an email...' autoComplete='off' {...register("email")}/> 
             <p>{errors.email?.message}</p>
-            <input type="password" placeholder='enter a password...' {...register("password")}/> 
+            <input type="password" placeholder='enter a password...' autoComplete='off' {...register("password")}/> 
             <p>{errors.password?.message}</p>
-            <input type="password" placeholder='confirm your password...' {...register("confirmPassword")}/> 
+            <input type="password" placeholder='confirm your password...' autoComplete='off' {...register("confirmPassword")}/> 
             <p>{errors.confirmPassword?.message}</p>
             <input type="submit" />
         </form>

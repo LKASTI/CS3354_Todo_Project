@@ -46,13 +46,13 @@ function CreateTask(){
             <form onSubmit={handleSubmit(onSubmit)}>
                 <h1>Create a Task</h1>
                 <label>Task Name</label>
-                <input type="text" placeholder='ex) Take Out Trash' {...register("taskname")}/>
+                <input type="text" placeholder='ex) Take Out Trash' autoComplete='off' {...register("taskname")}/>
                 <p style={{color:"red"}}>{errors.taskname?.message}</p>
                 <label>Days to Complete</label>
-                <input type="number" placeholder='ex) 5' {...register("timeleft")}/>
+                <input type="number" placeholder='ex) 5' autoComplete='off' {...register("timeleft")}/>
                 <p style={{color:"red"}}>{errors.timeleft?.message}</p>
                 <label>Task Details</label>
-                <textarea placeholder='ex) Take out the trash in the living room and the kitchen'{...register("description")}/>
+                <textarea placeholder='ex) Take out the trash in the living room and the kitchen' autoComplete='off' {...register("description")}/>
                 <p style={{color:"red"}}>{errors.description?.message}</p>
                 <input type="submit"/> 
             </form>

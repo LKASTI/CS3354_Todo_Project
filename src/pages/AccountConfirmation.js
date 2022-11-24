@@ -9,7 +9,7 @@ function AccountConfirmation(){
     return(
         <div>
             <h1>succesful account creation for {username}</h1>
-            <button onClick={() =>{navigate("/home")}}>continue</button>
+            <button onClick={() =>{navigate("/login")}}>continue</button>
         </div>
     )
 }

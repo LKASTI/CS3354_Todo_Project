@@ -13,11 +13,13 @@ export const AppContext = createContext()
 function App() {
   const [username, setUsername] = useState("")
   const [taskList, setTaskList] = useState([])
+  const [points, setPoints] = useState(0)
+  
   return (
     
     
     <div className="App">
-      <AppContext.Provider value={{username, setUsername, taskList, setTaskList}}>
+      <AppContext.Provider value={{username, setUsername,taskList, setTaskList, points, setPoints}}>
         <Router>
           <Routes>
             <Route path="/" element={<Login/>}/>

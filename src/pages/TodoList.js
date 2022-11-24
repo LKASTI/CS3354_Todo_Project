@@ -5,35 +5,28 @@ import './TodoList.css'
 
 function TodoList() {
     const navigate = useNavigate()
-    const {taskList, setTaskList} = useContext(AppContext)
-    const {time, setTime} = useState({})
-    const {currentTime, setCurrentTime} = useState(0)
-
-
-    useEffect(() => {
-        if(started)
-        {
-           const interval = setInterval(() => changeTime(), 1000)
-
-            return () => clearInterval(interval) 
-        }
-        
-    }, [time])
+    const [time, setTime] = useState({total: 0, days: 0, hours: 0, minutes: 0, seconds: 0})
+    const [started, setStarted] = useState(false)
+    const [pause, setPause] = useState(false)
+    const [timeAccum, setTimeAccum] = useState(0)
+    const {taskList, setTaskList, points, setPoints} = useContext(AppContext)
     
-    const changeTime = () => {
-        setCurrentTime((currentTime - 1000))
+
+    const updateTime = () => {
+        setTimeAccum(timeAccum+1000)
         setTime({
-            days: (Math.floor(currentTime / (1000 * 60 * 60 * 24))),
-            hours: (Math.floor((currentTime / (1000 * 60 * 60)) % 24)),
-            minutes: (Math.floor((currentTime / (1000 * 60)) % 60)),
-            seconds: (Math.floor((currentTime / (1000)) % 60)),
+            total: time.total - 1000,
+            days: Math.floor((time.total/(1000*60*60*24))),
+            hours: Math.floor((time.total/(1000*60*60)) % 24),
+            minutes: Math.floor((time.total/(1000*60)) % 60),
+            seconds: Math.floor((time.total/(1000)) % 60),
         })
     }
-    let started = false
+        
     const startTask = (days) =>{
-        started = true
-        setCurrentTime(days*24*60*60*1000)
+        setStarted(true)
         setTime({
+            total: days*24*60*60*1000,
             days: days,
             hours: 0,
             minutes: 0,
@@ -42,14 +35,46 @@ function TodoList() {
         
     }
 
-    const removeTask = () => {
+    const resume_pause = async () =>{
+        await setPause(!pause)
+        if(pause === true)
+        {
+            console.log("working")
+            setTime({
+                total: time.total,
+                days: time.days,
+                hours: time.hours,
+                minutes: time.minutes,
+                seconds: time.seconds,
+            })
+        }
+    }
+
+    useEffect(() => {
+        if(started && !pause)
+        {
+            const interval = setInterval(() => {updateTime()}, 1000)
+
+            return () => clearInterval(interval) 
+        }
+        
+    }, [time])
+
+    const removeTask = (days) => {
+        setStarted(false)
+        setPause(false)
+        const timeAccumulated = timeAccum/(1000*60*60) //in hours
+        const timeToComplete = (days*24) //in hours
+        const difference = timeToComplete - timeAccumulated 
+        setPoints(points+Math.ceil((difference*6)/10)) //formula for calculating points
         setTaskList(taskList.splice(0, taskList.length-1))
     }
 
     return(
         <div>
-            {console.log(taskList)}
+            {/* {console.log(taskList)} */}
             <h1>TODO LIST PAGE</h1>
+            <p>Points: {points}</p>
             <button onClick={() =>{navigate("/task-creation")}}>create task</button>
             {taskList.map((task) =>{
                 return(
@@ -58,8 +83,8 @@ function TodoList() {
                         <h1>Task Description: {task.description}</h1>
                         <h1>Time Left: {started? `${time.days} : ${time.hours} : ${time.minutes} : ${time.seconds}` : `${task.timeleft} days`} </h1>
                         <button onClick={() =>{startTask(task.timeleft)}}>start task</button>
-                        <button onClick={() =>{console.log(currentTime)}}>pause task</button>
-                        <button onClick={() =>{removeTask()}}>complete task</button>
+                        <button onClick={() =>{resume_pause()}}>{!pause? "pause task" : "resume task"}</button>
+                        <button onClick={() =>{removeTask(task.timeleft)}}>complete task</button>
                     </div>
                 )   
             })}

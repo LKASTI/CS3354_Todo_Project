@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+.background{
+    background-image: url("./background.png");
+    height:100vh;
+}
+
+.success{
+    position: relative;
+    top: 30vh;
+    background-color: #76d4d085;
+    font-family:'Nunito';
+    color: #252525;
+    font-size: 35px;
+    margin: auto;
+    filter: drop-shadow(0px 0px 5px #2b7a7771);
+    border: #2525259f solid 2px;
+    border-radius: 50px;
+    padding: 20px 15px 20px 15px;
+    width: max-content;
+    height: max-content;
+}
+
+.login-button{
+    background-color: #17252A;
+    font-family:'Nunito';
+    font-size: 30px;
+    color: #CEF4F2;
+    position: relative;
+    top: 31vh;
+    border-radius: 35px;
+    width: 20vh;
+    height: 55px;
+}
+
+.login-button:hover{
+    background-color: #17252ac3;
+    cursor: pointer;
+}

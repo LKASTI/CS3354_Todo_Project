@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+.background{
+    background-image: url("./background.png");
+    height:100vh;
+}
+
+.acc-input-boxes{
+    position: relative;
+    top: 15vh;
+    width: 20vh;
+    margin: auto;
+    color: #3E3E3E;
+    background-color: #61beb982;
+    border: #17252aaf 2px solid;
+    font-family:'Nunito';
+    margin-top: 15px;
+    font-size: 35px;
+    border-radius: 50px;
+    padding-left: 20px;
+    width: 40vh;
+    height: 70px;
+    filter: drop-shadow(0px 0px 10px #2b7a7742);
+}
+
+.acc-submit-button{
+    background-color: #17252A;
+    font-family:'Nunito';
+    font-size: 30px;
+    color: #CEF4F2;
+    position: relative;
+    border-radius: 35px;
+    width: 20vh;
+    height: 55px;
+    margin-top: 150px;
+}
+
+.acc-submit-button:hover{
+    background-color: #17252ac3;
+    cursor: pointer;
+}
+
+.acc-error-msg{
+    margin: auto;
+    margin-top: 15px;
+    top: 2.8vh;
+    position: relative;
+    color:red;
+    font-family: 'Nunito';
+    border-radius: 25px;
+    font-size: 20px;
+}

@@ -53,6 +53,18 @@ function TodoList() {
     useEffect(() => {
         if(started && !pause)
         {
+            if(time.total <= 0)
+            {
+                setTime({
+                    total: 0,
+                    days: 0,
+                    hours: 0,
+                    minutes: 0,
+                    seconds: 0,
+                })
+                alert('Task failed. No points awarded')
+                return removeTask()
+            }
             const interval = setInterval(() => {updateTime()}, 1000)
 
             return () => clearInterval(interval) 
@@ -65,8 +77,15 @@ function TodoList() {
         setPause(false)
         const timeAccumulated = timeAccum/(1000*60*60) //in hours
         const timeToComplete = (days*24) //in hours
-        const difference = timeToComplete - timeAccumulated 
-        setPoints(points+Math.ceil((difference*6)/10)) //formula for calculating points
+        const difference = timeToComplete - timeAccumulated
+        if(time.total <= 0)
+        {
+            setPoints(points)
+        }
+        else
+        {
+            setPoints(points+Math.ceil((difference*6)/10)) //formula for calculating points
+        }
         setTaskList(taskList.splice(0, taskList.length-1))
     }
 

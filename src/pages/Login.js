@@ -16,7 +16,6 @@ function Login(){
 
     return(
         <div className="login">
-            {console.log(Date.parse(new Date()))}
             <div>
                 <LoginForm/>
                 <div className="sign">

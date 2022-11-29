@@ -6,6 +6,7 @@ import * as yup from 'yup'
 import {yupResolver} from '@hookform/resolvers/yup'
 import {addDoc, getDocs, collection} from 'firebase/firestore'
 import {db} from '../config/firebase'
+import '../Registration.css'
 
 function AccountRegistrationForm(){
     const {setUsername} = useContext(AppContext)
@@ -55,15 +56,15 @@ function AccountRegistrationForm(){
 
     return(
         <form onSubmit={handleSubmit(onSubmit)}>
-            <input type="text" placeholder='enter a username...' autoComplete='off' {...register("username")}/> 
-            <p>{errors.username?.message}</p> 
-            <input type="text" placeholder='enter an email...' autoComplete='off' {...register("email")}/> 
-            <p>{errors.email?.message}</p>
-            <input type="password" placeholder='enter a password...' autoComplete='off' {...register("password")}/> 
-            <p>{errors.password?.message}</p>
-            <input type="password" placeholder='confirm your password...' autoComplete='off' {...register("confirmPassword")}/> 
-            <p>{errors.confirmPassword?.message}</p>
-            <input type="submit" />
+            <input className='acc-input-boxes' type="text" placeholder='enter a username...' autoComplete='off' {...register("username")}></input>
+            <p className='acc-error-msg'>{errors.username?.message}</p> 
+            <input className='acc-input-boxes'  type="text" placeholder='enter an email...' autoComplete='off' {...register("email")}/> 
+            <p className='acc-error-msg'>{errors.email?.message}</p>
+            <input className='acc-input-boxes'  type="password" placeholder='enter a password...' autoComplete='off' {...register("password")}/> 
+            <p className='acc-error-msg'>{errors.password?.message}</p>
+            <input className='acc-input-boxes'  type="password" placeholder='confirm password...' autoComplete='off' {...register("confirmPassword")}/> 
+            <p className='acc-error-msg' >{errors.confirmPassword?.message}</p>
+            <input className='acc-submit-button' type="submit" />
         </form>
     )
 }

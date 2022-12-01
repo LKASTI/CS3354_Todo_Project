@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Nunito+Sans&display=swap');
+.homepage-container {
+  min-height: 100vh;
+}
+.homepage-homepage {
+  width: 1920px;
+  height: 1080px;
+  display: flex;
+  padding: 0;
+  position: relative;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  border-radius: 0px 0px 0px 0px;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: #61beb9b6;
+}
+
+.todo-button{
+  all: unset;
+}
+
+.homepage-s-v-g1920x1080space {
+  left: 0px;
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
+}
+.homepage-animesceneryahd1eqpvwq8aoofp1 {
+  top: 150px;
+  left: 0px;
+  width: 1920px;
+  height: 627px;
+  position: absolute;
+  border-color: transparent;
+}
+.homepage-text01 {
+  top: 25px;
+  left: 252px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 48px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Arvo;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homepage-level-icon {
+  top: 15px;
+  left: 90px;
+  width: 125px;
+  height: 123px;
+  position: absolute;
+  border-color: transparent;
+}
+.homepage-text03 {
+  left: 125px;
+  color: rgba(0, 0, 0, 1);
+  width: 220px;
+  height: auto;
+  position: absolute;
+  font-size: 48px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homepage-coin-icon {
+  top: 20px;
+  left: 1568px;
+  width: 91px;
+  height: 93px;
+  position: absolute;
+  border-color: transparent;
+}
+.homepage-exp-bar {
+  top: 100px;
+  left: 257px;
+  width: 479px;
+  height: 11px;
+  position: absolute;
+  border-color: transparent;
+}
+.homepage-settings-icon {
+  top: 20px;
+  left: 1779px;
+  width: 105px;
+  height: 103px;
+  position: absolute;
+  border-color: transparent;
+}
+.homepage-create-task-group {
+  top: 760px;
+  left: 898px;
+  width: 178px;
+  height: 168px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  border-radius: 0px 0px 0px 0px;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.homepage-text05 {
+  top: 45px;
+  left: 48px;
+  color: rgba(0, 0, 0, 1);
+  width: 50px;
+  height: auto;
+  position: absolute;
+  font-size: 60px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homepage-handdrawndiamond89611 {
+  top: 40px;
+  left: 0px;
+  width: 128px;
+  height: 121px;
+  position: absolute;
+  border-color: transparent;
+}
+.homepage-shop-group {
+  top: 780px;
+  left: 153px;
+  width: 130px;
+  height: 150px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  border-radius: 0px 0px 0px 0px;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.homepage-text06 {
+  top: 100px;
+  color: rgba(0, 0, 0, 1);
+  width: 130px;
+  height: auto;
+  position: absolute;
+  font-size: 48px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Arvo;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homepage-shop-icon {
+  top: 0px;
+  left: 0px;
+  width: 104px;
+  height: 94px;
+  position: absolute;
+  border-color: transparent;
+}
+.homepage-profilegroup {
+  top: 780px;
+  left: 531px;
+  width: 138px;
+  height: 170px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: center;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  border-radius: 0px 0px 0px 0px;
+  flex-direction: row;
+  justify-content: center;
+  background-color: transparent;
+}
+.homepage-text08 {
+  top: 120px;
+  color: rgba(0, 0, 0, 1);
+  width: 138px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Arvo;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homepage-profile-icon {
+  top: 0px;
+  left: 5px;
+  width: 103px;
+  height: 114px;
+  position: absolute;
+  border-color: transparent;
+}
+.homepage-to-do-group {
+  top: 780px;
+  left: 1290px;
+  width: 165px;
+  height: 179px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: center;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  border-radius: 0px 0px 0px 0px;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.homepage-text10 {
+  top: 111px;
+  color: rgba(0, 0, 0, 1);
+  width: 165px;
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Arvo;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homepage-to-do-icon {
+  top: 0px;
+  left: 6px;
+  width: 104px;
+  height: 114px;
+  position: absolute;
+  border-color: transparent;
+}
+.homepage-to-do-icon:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.096);
+  border-radius: 20px;
+}
+.homepage-completed-group {
+  top: 780px;
+  left: 1617px;
+  width: 242px;
+  height: 175px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: center;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  border-radius: 0px 0px 0px 0px;
+  flex-direction: row;
+  justify-content: center;
+  background-color: transparent;
+}
+.homepage-text12 {
+  top: 125px;
+  color: rgba(0, 0, 0, 1);
+  width: 242px;
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Arvo;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.homepage-completed-icon {
+  top: 0px;
+  left: 71px;
+  width: 99px;
+  height: 114px;
+  position: absolute;
+  border-color: transparent;
+}
+.homepage-avatar {
+  top: 232px;
+  left: 987px;
+  width: 225px;
+  height: 518px;
+  position: absolute;
+  border-color: transparent;
+}

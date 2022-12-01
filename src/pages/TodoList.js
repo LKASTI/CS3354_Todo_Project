@@ -10,10 +10,12 @@ function TodoList() {
     const [started, setStarted] = useState(false)
     const [pause, setPause] = useState(false)
     const [timeAccum, setTimeAccum] = useState(0)
+    const [running, setRunning] = useState(false)
     const {taskList, setTaskList, points, setPoints} = useContext(AppContext)
     
 
     const updateTime = () => {
+        setRunning(true)
         setTimeAccum(timeAccum+1000)
         setTime({
             total: time.total - 1000,
@@ -91,23 +93,47 @@ function TodoList() {
     }
 
     return(
-        <div>
+        <div className='todolist-background'>
             {/* {console.log(taskList)} */}
             <HomeButton/>
-            <h1>TODO LIST PAGE</h1>
-            <p>Points: {points}</p>
-            {taskList.map((task) =>{
-                return(
-                    <div className="taskbox">
-                        <h1>Task Name: {task.taskname}</h1>
-                        <h1>Task Description: {task.description}</h1>
-                        <h1>Time Left: {started? `${time.days} : ${time.hours} : ${time.minutes} : ${time.seconds}` : `${task.timeleft} days`} </h1>
-                        <button onClick={() =>{startTask(task.timeleft)}}>start task</button>
-                        <button onClick={() =>{resume_pause()}}>{!pause? "pause task" : "resume task"}</button>
-                        <button onClick={() =>{removeTask(task.timeleft)}}>complete task</button>
-                    </div>
-                )   
-            })}
+            {
+                taskList.length === 0? 
+                    <span className='todolist-emptylist'>You have no tasks left to complete...</span>
+                :
+                    taskList.map((task) =>{
+                        return(
+                            <div className="todolist-taskbox">
+                                <span className='todolist-taskname-group'>Task Name: <br/><span className='todolist-taskname'>{task.taskname}</span></span>
+                                <p className='todolist-taskdetails-group'>Task Description: <br/><span className='todolist-taskdetails'>{task.description}</span></p>
+                                <p className='todolist-tasktime-group'>
+                                    Time Left: 
+                                    <br/>
+                                    <span className='todolist-tasktime'>
+                                        {started && running? 
+                                                `${time.days} : ${time.hours} : ${time.minutes} : ${time.seconds}` 
+                                            : 
+                                                task.timeleft >= 1? 
+                                                    `${task.timeleft} days`
+                                                : task.timeleft >= 0.0416?
+                                                    `${Math.round(task.timeleft*24)} hours`
+                                                : task.timeleft >= 0.000694?
+                                                    `${Math.round(task.timeleft*1140)} minutes`
+                                                :
+                                                    `${Math.round(task.timeleft*86400)} seconds`
+                                        } 
+                                    </span>
+                                </p>
+                                <div className='todolist-buttons'>
+                                    <button className='todolist-buttons-start' onClick={() =>{startTask(task.timeleft)}}>start</button>
+                                    <button className='todolist-buttons-pause' onClick={() =>{resume_pause()}}>{!pause? "pause" : "resume"}</button>
+                                    <button className='todolist-buttons-complete' onClick={() =>{removeTask(task.timeleft)}}>complete</button>
+                                </div>    
+                                
+                            </div>
+                        )   
+                    }
+                    )
+            }
         </div>
     )
 }

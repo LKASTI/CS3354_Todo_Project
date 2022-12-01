@@ -1,5 +1,151 @@
-.taskbox{
-    background-color: darkgray;
-    width: max-content;
-    margin: auto;
+.todolist-background{
+    background-color: #61beb99c;
+    min-height: 100vh;
+}
+
+.todolist-buttons{
+    display: flex;
+    margin-left: 140px;
+}
+.todolist-buttons-start{
+    all: unset;
+    width: 100px;
+    background-color: #61beb94f;
+    font-family: Inter;
+    border: solid black 1px;
+    border-radius: 7px;
+    text-align: center;
+}
+.todolist-buttons-start:hover{
+    cursor: pointer;
+}
+.todolist-buttons-pause{
+    all: unset;
+    width: 100px;
+    background-color: #61beb94f;
+    font-family: Inter;
+    border: solid black 1px;
+    border-radius: 7px;
+    text-align: center;
+    margin: 0px 5px 0px 5px;
+}
+.todolist-buttons-pause{
+    cursor: pointer;
+}
+.todolist-buttons-complete{
+    all: unset;
+    width: 100px;
+    background-color: #61beb94f;
+    font-family: Inter;
+    border: solid black 1px;
+    border-radius: 7px;
+    text-align: center;
+}
+.todolist-buttons-complete:hover{
+    cursor: pointer;
+}
+
+
+.todolist-emptylist{
+    position: relative;
+    top: 30vh;
+    color: #000000cb;
+    font-size: 30px;
+    font-style: Bold;
+    font-family: Arvo;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    word-wrap:break-word;
+}
+.todolist-taskbox{
+    text-align: center;
+    top: 20px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 25px;
+    border: solid 2px #1e434f8c;
+    filter: drop-shadow(#13989c85 0 0 25px);
+    padding: 10px 0px 5px 15px;
+    position: relative;
+    width: 600px;
+    left: 660px;
+}
+
+.todolist-taskname-group{
+    color: #187c9b;
+    font-size: 30px;
+    font-style: Bold;
+    font-family: Arvo;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    word-wrap:break-word;
+}
+.todolist-taskname{
+    /* background-color: rgb(211, 211, 211); */
+    border-radius: 10px;
+    padding: 3px 3px 3px 3px;
+    color: rgb(94, 93, 93);
+    font-size: 20px;
+    font-style: Bold;
+    font-family: Arvo;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+
+
+.todolist-taskdetails-group{
+    color: rgb(24, 124, 155);
+    font-size: 30px;
+    font-style: Bold;
+    font-family: Arvo;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    word-wrap:break-word;
+}
+.todolist-taskdetails{
+    /* background-color: rgb(211, 211, 211); */
+    border-radius: 10px;
+    padding: 3px 3px 3px 3px;
+    color: rgb(94, 93, 93);
+    font-size: 20px;
+    font-style: Bold;
+    font-family: Arvo;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+
+.todolist-tasktime-group{
+    color: rgb(24, 124, 155);
+    font-size: 30px;
+    font-style: Bold;
+    font-family: Arvo;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    word-wrap:break-word;
+}
+.todolist-tasktime{
+    /* background-color: rgb(211, 211, 211); */
+    border-radius: 10px;
+    padding: 3px 3px 3px 3px;
+    color: rgb(94, 93, 93);
+    font-size: 20px;
+    font-style: Bold;
+    font-family: Arvo;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
 }

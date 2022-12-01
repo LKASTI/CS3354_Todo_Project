@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Inter&family=Nunito+Sans&display=swap');
+
 .homepage-container {
   min-height: 100vh;
 }
 .homepage-homepage {
   width: 1920px;
-  height: 1080px;
+  height: 937px;
   display: flex;
   padding: 0;
   position: relative;
@@ -18,7 +20,7 @@
   border-radius: 0px 0px 0px 0px;
   flex-direction: row;
   justify-content: flex-start;
-  background-color: #61beb9b6;
+  background-color: #61beb99c;
 }
 
 .todo-button{
@@ -32,20 +34,27 @@
   position: absolute;
 }
 .homepage-animesceneryahd1eqpvwq8aoofp1 {
-  top: 150px;
+  top: 100px;
   left: 0px;
   width: 1920px;
   height: 627px;
+  filter: drop-shadow(0px 0px 60px #00ff6a93);
   position: absolute;
-  border-color: transparent;
+  border-radius: 10px;
+  border-top: solid 3px #61beb9c4;
+  border-bottom: solid 3px #61beb9c4;
 }
-.homepage-text01 {
-  top: 25px;
+.homepage-username {
+  top: 10px;
   left: 252px;
   color: rgba(0, 0, 0, 1);
   height: auto;
   position: absolute;
   font-size: 48px;
+  border: solid 2px #61beb99c;
+  border-radius: 25px;
+  background-color: #61beb99c;
+  padding: 5px 10px 5px 10px;
   align-self: auto;
   font-style: Bold;
   text-align: left;
@@ -79,24 +88,35 @@
   font-stretch: normal;
   text-decoration: none;
 }
-.homepage-coin-icon {
-  top: 20px;
+.homepage-points-group{
+  position: absolute;
+  top: 4px;
   left: 1568px;
+}
+.homepage-points{
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 55px;
+  position: relative;
+  color: gold;
+  text-shadow: 1px 0 black;
+  bottom: 27px;
+  left: 15px;
+}
+.homepage-coin-icon {
   width: 91px;
   height: 93px;
-  position: absolute;
-  border-color: transparent;
 }
 .homepage-exp-bar {
-  top: 100px;
-  left: 257px;
+  top: 85px;
+  left: 250px;
   width: 479px;
   height: 11px;
   position: absolute;
   border-color: transparent;
 }
 .homepage-settings-icon {
-  top: 20px;
+  top: 4px;
   left: 1779px;
   width: 105px;
   height: 103px;
@@ -104,7 +124,7 @@
   border-color: transparent;
 }
 .homepage-create-task-group {
-  top: 760px;
+  top: 700px;
   left: 898px;
   width: 178px;
   height: 168px;
@@ -123,14 +143,14 @@
   justify-content: flex-start;
   background-color: transparent;
 }
-.homepage-text05 {
+.homepage-plus {
   top: 45px;
-  left: 48px;
+  left: 63px;
   color: rgba(0, 0, 0, 1);
   width: 50px;
   height: auto;
   position: absolute;
-  font-size: 60px;
+  font-size: 80px;
   align-self: auto;
   font-style: Bold;
   text-align: left;
@@ -143,13 +163,18 @@
 .homepage-handdrawndiamond89611 {
   top: 40px;
   left: 0px;
-  width: 128px;
-  height: 121px;
+  width: auto;
+  height: auto;
   position: absolute;
   border-color: transparent;
 }
+.homepage-handdrawndiamond89611:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.096);
+  border-radius: 20px;
+}
 .homepage-shop-group {
-  top: 780px;
+  top: 750px;
   left: 153px;
   width: 130px;
   height: 150px;
@@ -168,7 +193,7 @@
   justify-content: flex-start;
   background-color: transparent;
 }
-.homepage-text06 {
+.homepage-shop {
   top: 100px;
   color: rgba(0, 0, 0, 1);
   width: 130px;
@@ -193,7 +218,7 @@
   border-color: transparent;
 }
 .homepage-profilegroup {
-  top: 780px;
+  top: 750px;
   left: 531px;
   width: 138px;
   height: 170px;
@@ -212,7 +237,7 @@
   justify-content: center;
   background-color: transparent;
 }
-.homepage-text08 {
+.homepage-profile {
   top: 120px;
   color: rgba(0, 0, 0, 1);
   width: 138px;
@@ -237,7 +262,7 @@
   border-color: transparent;
 }
 .homepage-to-do-group {
-  top: 780px;
+  top: 750px;
   left: 1290px;
   width: 165px;
   height: 179px;
@@ -256,7 +281,7 @@
   justify-content: flex-start;
   background-color: transparent;
 }
-.homepage-text10 {
+.homepage-todo {
   top: 111px;
   color: rgba(0, 0, 0, 1);
   width: 165px;
@@ -286,7 +311,7 @@
   border-radius: 20px;
 }
 .homepage-completed-group {
-  top: 780px;
+  top: 750px;
   left: 1617px;
   width: 242px;
   height: 175px;
@@ -305,7 +330,7 @@
   justify-content: center;
   background-color: transparent;
 }
-.homepage-text12 {
+.homepage-completed {
   top: 125px;
   color: rgba(0, 0, 0, 1);
   width: 242px;

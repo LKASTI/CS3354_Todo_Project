@@ -1,7 +1,8 @@
 import {AppContext} from '../App'
 import { useContext, useEffect, useState } from 'react'
 import {useNavigate} from 'react-router-dom'
-import './TodoList.css'
+import '../TodoList.css'
+import { HomeButton } from '../components/HomeButton'
 
 function TodoList() {
     const navigate = useNavigate()
@@ -92,13 +93,12 @@ function TodoList() {
     return(
         <div>
             {/* {console.log(taskList)} */}
+            <HomeButton/>
             <h1>TODO LIST PAGE</h1>
             <p>Points: {points}</p>
-            <button onClick={() =>{navigate("/task-creation")}}>create task</button>
-            {taskList.map((task, key) =>{
+            {taskList.map((task) =>{
                 return(
                     <div className="taskbox">
-                        {key = task.taskname + "_id"}
                         <h1>Task Name: {task.taskname}</h1>
                         <h1>Task Description: {task.description}</h1>
                         <h1>Time Left: {started? `${time.days} : ${time.hours} : ${time.minutes} : ${time.seconds}` : `${task.timeleft} days`} </h1>

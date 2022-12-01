@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Login from './pages/Login';
 import AccountRegistration from './pages/AccountRegistration';
 import AccountConfirmation from './pages/AccountConfirmation'; 
+import TaskCreationSuccess from './pages/TaskCreationSuccess';
 import {useState, useContext, createContext} from 'react'
 import Home from './pages/Home';
 import TodoList from './pages/TodoList';
@@ -29,6 +30,7 @@ function App() {
             <Route path="/home" element={<Home/>}/>
             <Route path="/todolist" element={<TodoList/>}/>
             <Route path="/task-creation" element={<CreateTask/>}/>
+            <Route path="/task-creation/success" element={<TaskCreationSuccess/>}/>
             <Route path="*" element={<h1>ERROR 404 PAGE NOT FOUND</h1>}/>
           </Routes>
         </Router>

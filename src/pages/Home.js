@@ -6,7 +6,7 @@ import React from 'react'
 import App, { AppContext } from '../App'
 
 function Home(props){
-    const {username} = useContext(AppContext)
+    const {username, points, setPoints} = useContext(AppContext)
     const navigate = useNavigate()
     if(!username)
     {
@@ -25,19 +25,22 @@ function Home(props){
                     alt="animesceneryahd1eqpvwq8aoofp14204"
                     className="homepage-animesceneryahd1eqpvwq8aoofp1"
                 />
-                <span className="homepage-text01">
+                <span className="homepage-username">
                     <span>{username}</span>
                 </span>
-                <img
+                {/* <img
                     src={require("./playground_assets/levelicon4214-q7ph-200h.png")}
                     alt="LevelIcon4214"
                     className="homepage-level-icon"
-                />
-                <img
-                    src={require("./playground_assets/coinicon4191-avb7r-200w.png")}
-                    alt="CoinIcon4191"
-                    className="homepage-coin-icon"
-                />
+                /> */}
+                <div className='homepage-points-group'>
+                    <img 
+                        src={require("./playground_assets/coinicon4191-avb7r-200w.png")}
+                        alt="CoinIcon4191"
+                        className="homepage-coin-icon"
+                    />
+                    <span className='homepage-points'>{points}</span>
+                </div>
                 <img
                     src={require("./playground_assets/expbar4191-evvk-200h.png")}
                     alt="ExpBar4191"
@@ -49,15 +52,16 @@ function Home(props){
                     className="homepage-settings-icon"
                 />
                 <div className="homepage-create-task-group">
-                    <span className="homepage-text05">+</span>
+                    <span className="homepage-plus">+</span>
                     <img
+                        onClick={() =>{navigate("/task-creation")}}
                         src={require("./playground_assets/handdrawndiamond896114192-zm1m-200h.png")}
                         alt="handdrawndiamond896114192"
                         className="homepage-handdrawndiamond89611"
                     />
                 </div>
                 <div className="homepage-shop-group">
-                    <span className="homepage-text06">
+                    <span className="homepage-shop">
                         <span>Shop</span>
                     </span>
                     <img
@@ -67,7 +71,7 @@ function Home(props){
                     />
                 </div>
                 <div className="homepage-profilegroup">
-                    <span className="homepage-text08">
+                    <span className="homepage-profile">
                         <span>Profile</span>
                     </span>
                     <img
@@ -77,12 +81,11 @@ function Home(props){
                     />
                 </div>
                 <div className="homepage-to-do-group">
-                    <span className="homepage-text10">
+                    <span className="homepage-todo">
                         <span>To-Do</span>
                     </span>
-                    
                     <button className='todo-button' >
-                            <img
+                        <img
                             onClick={() => {navigate("/todolist")}}
                             src={require("./playground_assets/todoicon4194-qvxa-200w.png")}
                             alt="ToDoIcon4194"
@@ -91,7 +94,7 @@ function Home(props){
                     </button>
                 </div>
                 <div className="homepage-completed-group">
-                    <span className="homepage-text12">
+                    <span className="homepage-completed">
                         <span>Completed</span>
                     </span>
                     <img

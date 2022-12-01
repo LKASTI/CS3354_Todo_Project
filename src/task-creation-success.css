@@ -1,0 +1,27 @@
+
+.task-creation-success{
+    color: rgba(41, 120, 145, 1);
+    position: relative;
+    top: 30vh;
+    font-size: 64px;
+    font-style: Bold;
+    font-family: Arvo;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.task-creation-return{
+    color: #1E434F;
+    position: absolute;
+    top: 45vh;
+    left: 70vh;
+    font-size: 48px;
+    font-style: Bold;
+    font-family: Arvo;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}

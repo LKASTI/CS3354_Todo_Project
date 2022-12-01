@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Inter&family=Nunito+Sans&display=swap');
+
+.create-task-container {
+  min-height: 100vh;
+}
+.create-task-taskpage {
+  width: 1920px;
+  height: 900px;
+  display: flex;
+  padding: 0;
+  position: relative;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  border-radius: 0px 0px 0px 0px;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.create-task-s-v-g1920x1080space {
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
+}
+.create-task-task-name-group {
+  top: 135px;
+  left: 299px;
+  width: 656px;
+  height: 158px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  border-radius: 0px 0px 0px 0px;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.create-task-nameinput{
+  all: unset;
+  background-image: url("./pages/playground_assets/rectangle14206-sasl-200h.png");
+  width: 656px;
+  height: 62px;
+  color: rgb(78, 78, 78);
+  font-size: 38px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Arvo;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  padding: 7px;
+}
+.create-task-nameinput::placeholder{
+  font-size: 38px;
+}
+.create-task-timeinput{
+  all: unset;
+  background-image: url("./pages/playground_assets/rectangle14206-sasl-200h.png");
+  width: 656px;
+  height: 62px;
+  color: rgb(78, 78, 78);
+  font-size: 38px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Arvo;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  padding: 7px;
+}
+.create-task-timeinput::placeholder{
+  font-size: 38px;
+}
+.create-task-detailsinput{
+  all: unset;
+  background-image: url("./pages/playground_assets/rectangle14206-qj9n-400h.png");
+  width: 655px;
+  height: 357px;
+  color: rgb(78, 78, 78);
+  font-size: 38px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Arvo;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  padding: 7px;
+}
+.create-task-detailsinput::placeholder{
+  font-size: 38px;
+}
+
+.create-task-text {
+  color: rgba(41, 120, 145, 1);
+  height: auto;
+  position: absolute;
+  font-size: 48px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Arvo;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.create-task-text02 {
+  top: 77px;
+  left: 22px;
+  color: rgba(76, 76, 76, 0.20000000298023224);
+  width: 519px;
+  height: auto;
+  position: absolute;
+  font-size: 48px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Arvo;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.create-task-name-chars {
+  top: 140px;
+  right: 0px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.create-task-dayto-complete-group {
+  top: 292px;
+  left: 299px;
+  width: 656px;
+  height: 196px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  border-radius: 0px 0px 0px 0px;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.create-task-text06 {
+  color: rgba(41, 120, 145, 1);
+  width: 501px;
+  height: auto;
+  position: absolute;
+  font-size: 48px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Arvo;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.create-task-rectangle2 {
+  top: 91px;
+  left: 0px;
+  width: 656px;
+  height: 72px;
+  position: absolute;
+  border-color: transparent;
+}
+.create-task-text08 {
+  top: 140px;
+  left: 521px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.create-task-task-details-group {
+  top: 371px;
+  left: 299px;
+  width: 655px;
+  height: 520px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  border-radius: 0px 0px 0px 0px;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.create-task-text10 {
+  top: 79px;
+  color: rgba(41, 120, 145, 1);
+  height: auto;
+  position: absolute;
+  font-size: 48px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Arvo;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.create-task-rectangle11 {
+  top: 137px;
+  left: 0px;
+  width: 655px;
+  height: 357px;
+  position: absolute;
+  border-color: transparent;
+}
+.create-task-text12 {
+  left: 6px;
+  color: rgba(76, 76, 76, 0.20000000298023224);
+  width: 519px;
+  height: auto;
+  position: absolute;
+  font-size: 48px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Arvo;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.create-task-text14 {
+  top: 125px;
+  left: 12px;
+  color: rgba(76, 76, 76, 0.20000000298023224);
+  width: 623px;
+  height: auto;
+  position: absolute;
+  font-size: 48px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Arvo;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.create-task-details-chars {
+  top: 515px;
+  right: 0px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.create-task-details-errors{
+  top: 510px;
+  left: 0px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.create-task-time-errors{
+  top: 135px;
+  left: 0px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.create-task-name-errors{
+  top: 135px;
+  left: 0px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.create-task-submit-button {
+  all: unset;
+  top: 700px;
+  left: 1184px;
+  width: 575px;
+  height: 134px;
+  position: absolute;
+  background-image: url("./pages/playground_assets/submitbutton4207-1kxr-200h.png");
+  border-color: transparent;
+}
+.create-task-submit-button:hover{
+  background-color: rgb(219, 218, 218);
+  border-radius: 60px;
+  cursor: pointer;
+}
+.create-task-title {
+  top: 72px;
+  left: 800px;
+  color: rgba(41, 120, 145, 1);
+  width: 588px;
+  height: auto;
+  position: absolute;
+  font-size: 48px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Arvo;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.create-task-homebutton1 {
+  top: 27px;
+  left: 45px;
+  width: 67px;
+  height: 58px;
+  position: absolute;
+}
+.create-task-homebutton1:hover{
+  cursor: pointer;
+  background-image: linear-gradient(rgb(212, 212, 212), rgb(212, 212, 212));
+  background-size: 150% 150%;
+  border-radius: 50px;
+}
+.task-button{
+  all: unset;
+}
+

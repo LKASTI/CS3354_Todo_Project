@@ -12,10 +12,10 @@ Registration Usecase:\
 TaskCreation Usecase:\ 
 ![](https://github.com/LKASTI/CS3354_Todo_Project/blob/main/taskcreation-usecase.gif)
 
-TaskCompletion Sucess Usecase\
+TaskCompletion Sucess Usecase:\
 ![](https://github.com/LKASTI/CS3354_Todo_Project/blob/main/taskcompletion-success-usecase.gif)
 
-TaskCompletion Failure Usecase\
+TaskCompletion Failure Usecase:\
 ![](https://github.com/LKASTI/CS3354_Todo_Project/blob/main/taskcompletion-failure-usecase.gif)
 
 ## Available Scripts

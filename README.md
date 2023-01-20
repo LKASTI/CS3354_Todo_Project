@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Demonstration GIFs
-Login Usecase:
+Login Usecase: \
 ![](https://github.com/LKASTI/CS3354_Todo_Project/blob/main/login-usecase.gif)
 
 ## Available Scripts

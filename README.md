@@ -4,19 +4,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Demonstration GIFs
 Login Usecase:\
-![](https://github.com/LKASTI/CS3354_Todo_Project/blob/main/login-usecase.gif)\
+![](https://github.com/LKASTI/CS3354_Todo_Project/blob/main/login-usecase.gif)
 
 Registration Usecase:\
-![](https://github.com/LKASTI/CS3354_Todo_Project/blob/main/registration-usecase.gif)\
+![](https://github.com/LKASTI/CS3354_Todo_Project/blob/main/registration-usecase.gif)
 
 TaskCreation Usecase:\ 
-![](https://github.com/LKASTI/CS3354_Todo_Project/blob/main/taskcreation-usecase.gif)\
+![](https://github.com/LKASTI/CS3354_Todo_Project/blob/main/taskcreation-usecase.gif)
 
 TaskCompletion Sucess Usecase\
-![](https://github.com/LKASTI/CS3354_Todo_Project/blob/main/taskcompletion-success-usecase.gif)\
+![](https://github.com/LKASTI/CS3354_Todo_Project/blob/main/taskcompletion-success-usecase.gif)
 
 TaskCompletion Failure Usecase\
-![](https://github.com/LKASTI/CS3354_Todo_Project/blob/main/taskcompletion-failure-usecase.gif)\
+![](https://github.com/LKASTI/CS3354_Todo_Project/blob/main/taskcompletion-failure-usecase.gif)
 
 ## Available Scripts
 

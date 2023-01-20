@@ -9,7 +9,7 @@ Login Usecase:\
 Registration Usecase:\
 ![](https://github.com/LKASTI/CS3354_Todo_Project/blob/main/registration-usecase.gif)
 
-TaskCreation Usecase: \n 
+TaskCreation Usecase:
 ![](https://github.com/LKASTI/CS3354_Todo_Project/blob/main/taskcreation-usecase.gif)
 
 TaskCompletion Sucess Usecase:\
